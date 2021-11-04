@@ -3,4 +3,30 @@ extends layout
 block content
   h1= title
   
+  -
+    let avatar = [
+    {
+     "name": 'Aang',
+     "gender": 'male',
+     "age": "112"
+    },
+    {
+     "name": 'Katara',
+     "gender": 'female',
+     "age": "14"
+    },
+    {
+     "name": 'Ty Lee',
+     "gender": 'female',
+     "age": "14"
+    }
+   ]
+  div(class="container-fluid")
+    div(class='row')
+      each item in avatar 
+        div(class='col-sm-2') Name: #{item.name}, Geneder: #{item.gender}, Age: #{item.age}
+        
 
+        
+
+        
