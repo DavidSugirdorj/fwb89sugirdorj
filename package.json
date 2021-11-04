@@ -13,7 +13,7 @@
     "morgan": "^1.10.0",
     "pug": "^3.0.2"
   },
-  "description": "",
+  "description": "Setup for Assignment 10",
   "main": "app.js",
   "repository": {
     "type": "git",
