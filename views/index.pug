@@ -3,7 +3,7 @@ extends layout
 block content
   h1= title
   p Welcome to fwb89sugirdorj
-  button(type='button', class='btn btn-secondary') Button  
+  button(type='button', class='btn btn-secondary', onClick='update()') Button  
 
   #target Display 
 
@@ -11,6 +11,5 @@ block content
     var  client_count = 0;
     function update(){
       client_count +=1;
-      let element = document.getElementById(target);
-      element.textContent = client_count;
+      document.getElementById('target').innerHTML = client_count ;
       }
