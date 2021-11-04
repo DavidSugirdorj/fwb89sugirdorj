@@ -3,6 +3,14 @@ extends layout
 block content
   h1= title
   p Welcome to fwb89sugirdorj
-  button(type='button', class='btn btn-secondary') aaaa
+  button(type='button', class='btn btn-secondary') Button  
 
-  div(id='target') Display  
+  #target Display 
+
+  script. 
+    var  client_count = 0;
+    function update(){
+      client_count +=1;
+      let element = document.getElementById(target);
+      element.textContent = client_count;
+      }
