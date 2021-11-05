@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to fwb89sugirdorj
+  button(type='button', class='btn btn-secondary', onClick='update()') Button  
+
+  #target Display 
+  var avatar = ['age', 'gender', 'status']
+
+  script. 
+    var  client_count = 0;
+    function update(){
+      client_count +=1;
+      document.getElementById('target').innerHTML = client_count ;
+      }
+  
+

@@ -2,6 +2,51 @@ extends layout
 
 block content
   h1= title 
-  
-  
+  table.table 
+    tr
+      td 0
+      td 1
+      td 2
+      td 3
+      td 0
+    tr
+      td 1
+      td 2 
+      td 3
+      td 0
+      td 1
+    tr 
+      td 2
+      td 3 
+      td 0
+      td 1
+      td 2
+    tr 
+      td 3
+      td 0
+      td 1
+      td 2
+      td 3
+  p (#{query.rows}+#{query.cols})%4
+  - rows Number(query.rows)
+  - col Number(query.cols)
+  if Number.isInteger(rows)
+    p row is an integer 
+    if Number.isInteger(cols)
+      p col is and integer 
+  - else if row[i]>row[5]
+      p row is more than what we need 
+  - else if col[i]>col[5]
+      p col is more than what we need 
+    - for(let i=0; i<6; i++){
+    -
+      tr#middle
+        -for(let j=0; j<6; j++){
+          td=i+j
+        }}
 
+
+
+
+  
+  
